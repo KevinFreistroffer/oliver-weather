@@ -12,12 +12,10 @@ app.use(express.static(path.join(__dirname, '/static/js')));
 app.use(express.static(path.join(__dirname, './static/js')));
 
 app.use('/*', (req, res) => {
-	res.sendFile(express.static(path.join(__dirname, './index.html')));
+	res.sendFile(express.static(path.join(__dirname, '/index.html')));
 });
 
-app.listen(process.env.PORT, () => {
-	console.log(`Listeningfds on port: ${process.env.PORT}`);		 		
-});
+app.listen(process.env.PORT});
 
 
 module.exports = app;

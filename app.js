@@ -10,7 +10,7 @@ app.use('/*', (req, res) => {
 	res.sendFile(express.static(path.join(__dirname, 'index.html')));
 });
 
-app.listen(process.env.PORT});
+app.listen(process.env.PORT);
 
 
 module.exports = app;
